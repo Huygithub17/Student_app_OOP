@@ -57,16 +57,16 @@ class Student
     function grade()
     {
         $avg = $this->averageScore();
-        if ($avg > 70 && $avg <= 100) {
+        if ($avg >= 70 && $avg <= 100) {
             return "A";
         }
-        if ($avg > 60 && $avg <= 69.9) {
+        if ($avg >= 60 && $avg <= 69.9) {
             return "B";
         }
-        if ($avg > 50 && $avg <= 59.9) {
+        if ($avg >= 50 && $avg <= 59.9) {
             return "C";
         }
-        if ($avg > 40 && $avg <= 49.9) {
+        if ($avg >= 40 && $avg <= 49.9) {
             return "D";
         }
         if ($avg > 0 && $avg <= 39.9) {
